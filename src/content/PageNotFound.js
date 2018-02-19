@@ -3,6 +3,7 @@
 import React from 'react';
 import DefaultLayout from 'app/layouts/Default';
 import { Heading } from 'app/components/UI';
+import SEO from 'app/components/SEO';
 
 
 const PageNotFound = (props) => {
