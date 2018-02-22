@@ -11,7 +11,7 @@ const Header = (props) => {
         <div className="container">
 
             <div className="logo">
-                <Link to="/">Productivity Application</Link>
+                <Link to="/">Productivity Application testing</Link>
             </div>
 
             <nav>
@@ -21,7 +21,7 @@ const Header = (props) => {
                 <span className="sep"></span>
                 <Link to="/about" activeClassName="active">About</Link>
                 <span className="sep"></span>
-                <Link to="/contact-us" activeClassName="active">Contact Us</Link>
+                <Link to="/us-contact" activeClassName="active">Us Contact</Link>
             </nav>
 
         </div>

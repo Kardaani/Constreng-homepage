@@ -5,9 +5,15 @@ import DefaultLayout from 'app/layouts/Default';
 import { Heading } from 'app/components/UI';
 import { Row, Col, message } from 'antd';
 import SEO from 'app/components/SEO';
+//import bootstrap from '../../public/scripts/bootstrap_contact'
 
 
-const ContactUs = (props) => {
+
+
+const ContactUs_orig = (props) => {
+
+
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -51,4 +57,4 @@ const ContactUs = (props) => {
 
 }
 
-export default ContactUs;
+export default ContactUs_orig;

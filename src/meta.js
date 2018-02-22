@@ -26,7 +26,7 @@ module.exports = [
     },
 
     {
-        url: 'contact-us',
+        url: 'us-contact',
         title: 'Contact Us | Productivity Application',
         description: 'Want to get in touch with us? Enter the form below.',
         keywords: 'productivity app, contact, get in touch',

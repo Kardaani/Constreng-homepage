@@ -5,7 +5,7 @@ import DefaultLayout from 'app/layouts/Default';
 import { Heading } from 'app/components/UI';
 import { Row, Col, Carousel } from 'antd';
 import SEO from 'app/components/SEO';
-
+import bootstrap from '../../public/scripts/bootstrap_contact'
 
 const Home = (props) => {
 
