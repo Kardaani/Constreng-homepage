@@ -46,9 +46,9 @@ const WebsiteRoutes = {
             indexRoute: {
                 getComponent(location, cb) {
                     DynamicImport(
-                        import(/* webpackChunkName: "contact-us" */'app/content/UsContact'),
+                        import(/* webpackChunkName: "contact-us" */'app/content/ContactUs'),
                         cb,
-                        'us-contact'
+                        'contact-us'
                     );
                 }
             },

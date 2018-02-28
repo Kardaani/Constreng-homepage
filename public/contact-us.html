@@ -1,3 +1,4 @@
+
 <!doctype html><html lang="en">
 <head>
   <meta charset="utf-8"/>
@@ -7,15 +8,62 @@
   <meta name="description" content="Want to get in touch with us? Enter the form below." data-react-helmet="true"/>
   <meta name="keywords" content="productivity app, contact, get in touch" data-react-helmet="true"/>
   <link rel="icon" href="/images/favicon.ico"/>
-  <link href="/styles.css" rel="stylesheet"/>
+  <link href="./styles/styles.scss" rel="stylesheet"/>
+
+
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
 </head>
 <body>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var user, to, subject, text;
+        $("#send_email").click(function () {
+            // enter your email account that you want to recieve emails at.
+            to = "kari.eronen71@gmail.com";
+            name = $("#name").val();
+            user = $("#user_email").val();
+            text = $("#textarea1").val();
+            // $("#message").text("Sending E-mail...Please wait");
+            $.get("http://localhost:8080/send", {
+                to: to,
+                name: name,
+                user: user,
+                text: text
+            }, function (data) {
+                if (data == "sent") {
+                    console.log("Email sent");
+                }
+            });
+        });
+    });
+</script>
+
+<!--Modal Trigger Script-->
+<script>
+$(document).ready(function(){
+// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+$('.modal-trigger').leanModal();
+});
+</script>
+
+
+
   <div id="root">
     <div>
       <div class="website--layout" data-reactroot="" data-reactid="1" data-react-checksum="1923647037">
         <header class="main" data-reactid="2">
           <div class="container" data-reactid="3">
-            <div class="logo" data-reactid="4"><a href="/" data-reactid="5">Productivity Application testing2</a>
+            <div class="logo" data-reactid="4"><a href="/" data-reactid="5">Productivity Application testing Kari</a>
             </div>
             <nav data-reactid="6">
               <a href="/" class="active" data-reactid="7">Home</a>
@@ -27,7 +75,7 @@
               <a href="/about" data-reactid="11">About</a>
               <span class="sep" data-reactid="12">
               </span>
-              <a href="/us-contact" class="active" data-reactid="13">Contact Us</a>
+              <a href="/contact-us" class="active" data-reactid="13">Contact Us</a>
             </nav>
           </div>
         </header>
@@ -41,7 +89,7 @@
                 <div class="heading" data-reactid="18"><!-- react-text: 19 -->
 
 
-                Who doesn&#x27;t love to get Feedback and Suggestions?<!-- /react-text -->
+                 Kari Who doesn&#x27;t love to get Feedback and Suggestions?<!-- /react-text -->
                   <div class="subtitle" data-reactid="20">We would love to hear from you., Just fill the form below and we will get in touch with you soon (if required).</div>
                 </div>
               </div>
@@ -55,14 +103,26 @@
                   </div>
                   <div class="input" data-reactid="27">
                     <label for="email" data-reactid="28">Email Address</label>
-                    <input type="text" id="email" placeholder="john.doe@gmail.com" data-reactid="29"/>
+                    <input type="text" id="user_email" placeholder="john.doe@gmail.com" data-reactid="29"/>
                   </div>
                   <div class="input" data-reactid="30">
                     <label for="message" data-reactid="31">Your Message</label>
-                    <textarea type="text" id="message" placeholder="Please enter your message here..." data-reactid="32">
+                    <textarea type="text" id="textarea1" placeholder="Please enter your message here..." data-reactid="32">
                     </textarea>
                   </div>
-                  <button type="submit" class="button" data-reactid="33">Send Message</button>
+<a id="send_email" class="waves-effect waves-light btn-large black homepage-buttons button-text center modal-trigger" href="#modal1"> Send email </a>
+                  <div id="modal1" class="modal modal-fixed-footer thank-you-modal">
+                      <div class="modal-content">
+                          <h4>Thank you!</h4>
+                          <p>Your email has been sent. I'll get back to you shortly.</p>
+                      </div>
+                      <div class="modal-footer">
+                          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+                      </div>
+                  </div>
+
+
+
                 </form>
               </div>
             </div>

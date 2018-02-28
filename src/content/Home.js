@@ -19,7 +19,7 @@ const Home = (props) => {
             <Col span={24} className="component--slider">
                 <div>
                     <div className="image">
-                        <img src="/images/slider/1.png" />
+                        <img src="../public/images/slider/2.png" />
                     </div>
                     <div className="title" style={{ textAlign: 'center' }}>This is a screenshot of the Board view page</div>
                 </div>

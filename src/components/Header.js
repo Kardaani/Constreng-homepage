@@ -11,7 +11,7 @@ const Header = (props) => {
         <div className="container">
 
             <div className="logo">
-                <Link to="/">Productivity Application testing</Link>
+                <Link to="/">Productivity Application testing2</Link>
             </div>
 
             <nav>
