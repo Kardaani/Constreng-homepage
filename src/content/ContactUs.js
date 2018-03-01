@@ -25,7 +25,7 @@ const ContactUs = (props) => {
         <DefaultLayout>
 
             <Heading
-                title=" Kari Who doesn't love to get Feedback and Suggestions?"
+                title=" Karito0103 Who doesn't love to get Feedback and Suggestions?"
                 subtitle="We would love to hear from you., Just fill the form below and we will get in touch with you soon (if required)."
             />
 
