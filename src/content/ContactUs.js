@@ -7,7 +7,7 @@ import { Row, Col, message } from 'antd';
 import SEO from 'app/components/SEO';
 //import bootstrap from '../../public/scripts/bootstrap_contact'
 
-
+import { Link } from 'react-router';
 
 
 const ContactUs = (props) => {

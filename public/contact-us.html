@@ -16,16 +16,18 @@
       <header class="main" data-reactid="2">
         <div class="container" data-reactid="3">
           <div class="logo" data-reactid="4">
-            <a href="/" data-reactid="5">Productivity Application</a>
+            <a href="/" data-reactid="5">CONSTRENG HOMEPAGE</a>
           </div>
           <nav data-reactid="6">
             <a href="/" class="active" data-reactid="7">Home</a>
             <span class="sep" data-reactid="8"></span>
-            <a href="/features" class="active" data-reactid="9">Features</a>
+            <a href="/services" class="active" data-reactid="9">Services</a>
             <span class="sep" data-reactid="10"></span>
-            <a href="/about" data-reactid="11">About</a>
+            <a href="/about" data-reactid="11">About company</a>
             <span class="sep" data-reactid="12"></span>
             <a href="/contact-us" data-reactid="13">Contact Us</a>
+            <span class="sep" data-reactid="12"></span>
+              <a target="_blank" href="http://www.constreng.fi">SUOMEKSI</a>
           </nav>
         </div>
       </header>
@@ -66,7 +68,14 @@
 $(document).ready(function(){
 // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
 $('.modal-trigger').leanModal();
+}
+}.done(function(data) {
+    submitButton.prop('disabled', false);
+    $('#modal1').modal({'show' : true});
 });
+})
+}
+
 </script>
 
 
@@ -101,20 +110,32 @@ $('.modal-trigger').leanModal();
                   <div class="input" data-reactid="30">
                     <label for="message" data-reactid="31">Your Message</label>
                     <textarea type="text" id="textarea1" placeholder="Please enter your message here..." data-reactid="32">
+
                     </textarea>
                   </div>
-<a id="SEND_EMAIL" class="waves-effect waves-light btn-large black homepage-buttons button-text center modal-trigger" href="#modal1"> SEND EMAIL </a>
-                  <div id="modal1" class="modal modal-fixed-footer thank-you-modal">
-                      <div class="modal-content">
+                       <a id="SEND_EMAIL" class="waves-effect waves-light btn-large black homepage-buttons button-text center modal-trigger" href="#modal1"> SEND MESSAGE </a>
+                           <div id="modal1" class="modal modal-fixed-footer thank-you-modal">
+                               <div class="modal-content">
 
 
-                      </div>
+                                </div>
                       <div class="modal-footer">
-                        <h4>Thank you!</h4>
+
+
+
+                      <a href="/" class="active" data-reactid="7">Cancel</a>
+                      <!--
+                      <h4>Thank you!</h4>
                         <p>Your email has been sent. I'll get back to you shortly.</p>
-                          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+
+                      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+-->
                       </div>
                   </div>
+
+
+
+
 
 
 

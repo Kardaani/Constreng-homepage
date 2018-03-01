@@ -54,6 +54,16 @@ const WebsiteRoutes = {
             },
         },
         {
+            path: 'suomeksi',
+            getComponent(location, cb) {
+                DynamicImport(
+                    import(/* webpackChunkName: "suomeksi" */'app/content/Suomeksi'),
+                    cb,
+                    'suomeksi'
+                );
+            }
+        },
+        {
             path: '*',
             getComponent(location, cb) {
                 DynamicImport(
