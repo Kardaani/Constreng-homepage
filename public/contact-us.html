@@ -1,24 +1,37 @@
 
-<!doctype html><html lang="en">
-<head>
-  <meta charset="utf-8"/>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <title>Contact Us | Productivity Application</title>
-  <meta name="description" content="Want to get in touch with us? Enter the form below." data-react-helmet="true"/>
-  <meta name="keywords" content="productivity app, contact, get in touch" data-react-helmet="true"/>
+  <meta name="description" content="These are some of the Features of this application." data-react-helmet="true"/>
+  <meta name="keywords" content="features, productivity app features, application features, productivity application" data-react-helmet="true"/>
   <link rel="icon" href="/images/favicon.ico"/>
-  <link href="./styles/styles.scss" rel="stylesheet"/>
-
-
-  <!--Import Google Icon Font-->
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-
+  <link href="/styles.css" rel="stylesheet"/>
 </head>
 <body>
+  <div id="root"><div>
+    <div class="website--layout" data-reactroot="" data-reactid="1" data-react-checksum="1989481281">
+      <header class="main" data-reactid="2">
+        <div class="container" data-reactid="3">
+          <div class="logo" data-reactid="4">
+            <a href="/" data-reactid="5">Productivity Application</a>
+          </div>
+          <nav data-reactid="6">
+            <a href="/" class="active" data-reactid="7">Home</a>
+            <span class="sep" data-reactid="8"></span>
+            <a href="/features" class="active" data-reactid="9">Features</a>
+            <span class="sep" data-reactid="10"></span>
+            <a href="/about" data-reactid="11">About</a>
+            <span class="sep" data-reactid="12"></span>
+            <a href="/contact-us" data-reactid="13">Contact Us</a>
+          </nav>
+        </div>
+      </header>
+
+
+
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <!-- Compiled and minified JavaScript -->
@@ -27,7 +40,7 @@
 <script>
     $(document).ready(function () {
         var user, to, subject, text;
-        $("#send_email").click(function () {
+        $("#SEND_EMAIL").click(function () {
             // enter your email account that you want to recieve emails at.
             to = "kari.eronen71@gmail.com";
             name = $("#name").val();
@@ -58,27 +71,7 @@ $('.modal-trigger').leanModal();
 
 
 
-  <div id="root">
-    <div>
-      <div class="website--layout" data-reactroot="" data-reactid="1" data-react-checksum="1923647037">
-        <header class="main" data-reactid="2">
-          <div class="container" data-reactid="3">
-            <div class="logo" data-reactid="4"><a href="/" data-reactid="5">Productivity Application testing Kari</a>
-            </div>
-            <nav data-reactid="6">
-              <a href="/" class="active" data-reactid="7">Home</a>
-              <span class="sep" data-reactid="8">
-              </span>
-              <a href="/features" data-reactid="9">Features</a>
-              <span class="sep" data-reactid="10">
-              </span>
-              <a href="/about" data-reactid="11">About</a>
-              <span class="sep" data-reactid="12">
-              </span>
-              <a href="/contact-us" class="active" data-reactid="13">Contact Us</a>
-            </nav>
-          </div>
-        </header>
+
 
 
 
@@ -110,13 +103,15 @@ $('.modal-trigger').leanModal();
                     <textarea type="text" id="textarea1" placeholder="Please enter your message here..." data-reactid="32">
                     </textarea>
                   </div>
-<a id="send_email" class="waves-effect waves-light btn-large black homepage-buttons button-text center modal-trigger" href="#modal1"> Send email </a>
+<a id="SEND_EMAIL" class="waves-effect waves-light btn-large black homepage-buttons button-text center modal-trigger" href="#modal1"> SEND EMAIL </a>
                   <div id="modal1" class="modal modal-fixed-footer thank-you-modal">
                       <div class="modal-content">
-                          <h4>Thank you!</h4>
-                          <p>Your email has been sent. I'll get back to you shortly.</p>
+
+
                       </div>
                       <div class="modal-footer">
+                        <h4>Thank you!</h4>
+                        <p>Your email has been sent. I'll get back to you shortly.</p>
                           <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
                       </div>
                   </div>
