@@ -7,6 +7,7 @@
     "clean": "rimraf public/scripts",
     "watch": "cross-env NODE_ENV=development webpack -w",
     "build": "npm run clean && cross-env NODE_ENV=production webpack -p",
+    "postinstall": "npm run clean && cross-env NODE_ENV=production webpack -p",
     "deploy": "firebase deploy"
   },
   "repository": "https://github.com/dhruv-kumar-jha/react-static-complete-website.git",

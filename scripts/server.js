@@ -26,8 +26,8 @@ let smtpTrans = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: 'xxxx@gmail.com',
-        pass: 'yyyy'
+        user: 'karieronen71@gmail.com',
+        pass: 'PikkuTikka8'
     }
 });
 
