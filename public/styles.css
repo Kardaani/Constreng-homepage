@@ -52,7 +52,7 @@ header.main {
         padding: 0 10px; }
 
 .container {
-  max-width: 1000px;
+  max-width: 2000px;
   padding: 0 50px;
   margin: 0 auto; }
 
@@ -240,6 +240,15 @@ main {
  */
 figure {
   margin: 1em 40px;
+}
+.slider{
+  width:700px;
+  margin:20px auto;
+  text-align: center;
+  padding:20px;
+  color:white;
+  .parent-slide{padding:15px;}
+  img{display: block;margin:auto;}
 }
 /**
  * 1. Add the correct box sizing in Firefox.

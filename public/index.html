@@ -7,6 +7,14 @@
   <meta name="keywords" content="Constreng, full stack, react, big data, it-consulting, web pages, python, javascript" data-react-helmet="true"/>
   <link rel="icon" href="/images/favicon.ico"/>
   <link href="/styles.css" rel="stylesheet"/>
+
+
+  <link rel="stylesheet" type="text/css" href="slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+
+
+
+
 </head>
 <body>
   <div id="root">
@@ -15,7 +23,7 @@
         <header class="main" data-reactid="2">
           <div class="container" data-reactid="3">
             <div class="logo" data-reactid="4">
-              <a href="/" data-reactid="5">CONSTRENG - Constructive engineering</a>
+              <a href="/" data-reactid="5">CONSTRENG - Constructive engineering.      CALL to mobile <a href="tel:+358400633529">+358400633529</a></a>
             </div>
             <nav data-reactid="6">
               <a href="/" class="active" data-reactid="7">Home</a>
@@ -34,21 +42,75 @@
         <div class="page-content" data-reactid="14">
           <div class="container" data-reactid="15">
             <div class="ant-row" data-reactid="16"><div class="ant-col-14 ant-col-offset-5" data-reactid="17">
-              <div class="heading" data-reactid="18"><!-- react-text: 19 -->Constreng offers engineering it-services in the next fields of computer science technology:
-                - Full Stack Development (Html5/Reactjs), Big data searches by Python/scala, IT-consulting.<!-- /react-text --></div>
+              <div class="heading" data-reactid="18"> Constreng offers engineering it-services in the next fields of computer science technology:</div>
+              <div class="heading" data-reactid="18"> -  Web home pages to You or to Your company. </div>
+              <div class="heading" data-reactid="18"> -  Full Stack Development (Html5/MERN). </div>
+              <div class="heading" data-reactid="18"> -  Big data analyses by Python/scala. </div>
+              <div class="heading" data-reactid="18"> -  IT-consulting. </div>
+              <div class="heading" data-reactid="18"> -  3D- modeling. </div>
             </div>
           </div>
+
+
+
           <div class="ant-col-24 component--slider" data-reactid="20">
             <div data-reactid="21">
-              <div class="image" data-reactid="22">
-                <img src="/images/slider/middleware-diagram.png" data-reactid="23"/></div>
-                <div class="title" style="text-align:center;" data-reactid="24"></div>
+
+
+
+              <div class="slider">
+                <div class="slide">
+                  <img src="/images/slider/BigData2_final.png" alt="" class="img-responsive" />
+                  <h1>Bif data analysis</h1>
+                </div>
+                <div class="slide">
+                  <img src="/images/slider/middleware-diagram_final.png" alt="" class="img-responsive" />
+                  <h1>MERN-stack programming</h1>
+                </div>
+                <div class="slide">
+                  <img src="/images/slider/acad_final.png" alt="" class="img-responsive" />
+                  <h1>Modelling</h1>
+                </div>
               </div>
+
+
+
+
+
+
+<!--
+              <div class="image" data-reactid="25">
+                <img src="/images/slider/middleware-diagram.png" data-reactid="26"/>
+              </div>
+              <div class="title" style="text-align:center;" data-reactid/>
+              </div>
+-->
             </div><!-- react-empty: 25 --></div>
           </div>
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick.min.js"></script>
+
+  <script type="text/javascript">
+  window.onload=function(){
+$('.slider').slick({
+autoplay:true,
+autoplaySpeed:1500,
+arrows:true,
+prevArrow:'<button type="button" class="slick-prev"></button>',
+nextArrow:'<button type="button" class="slick-next"></button>',
+centerMode:true,
+slidesToShow:1,
+slidesToScroll:3
+});
+};
+</script>
+
+
+
     <script defer="" src="/scripts/manifest.7561b38e92607c13d50c.js"></script>
     <script defer="" src="/scripts/vendor.f2e1672d0a08e8e331c3.js"></script>
     <script defer="" src="/scripts/bundle.0843df586e67ff7db106.js"></script>

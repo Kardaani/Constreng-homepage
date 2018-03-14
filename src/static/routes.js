@@ -18,7 +18,7 @@ const routes = (
         <Route path='contact-us' component={ ContactUs } />
         <Route path='suomeksi' component={ Suomeksi } />
         <Route path='*' component={ PageNotFound } />
-    </Route>n
+    </Route>
 );
 
 export default routes;

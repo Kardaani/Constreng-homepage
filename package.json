@@ -10,8 +10,8 @@
     "postinstall": "npm run clean && cross-env NODE_ENV=production webpack -p",
     "deploy": "firebase deploy"
   },
-  "repository": "https://github.com/dhruv-kumar-jha/react-static-complete-website.git",
-  "author": "Dhruv Kumar Jha <dhruv@dhruvkumarjha.com>",
+  "repository": "",
+  "author": "Kari Eronen",
   "license": "MIT",
   "devDependencies": {
     "antd": "^2.9.3",
