@@ -1,0 +1,26 @@
+'use strict';
+
+import React from 'react';
+import DefaultLayout from 'app/layouts/Default';
+import { Heading } from 'app/components/UI';
+import SEO from 'app/components/SEO';
+
+
+const Suomeksi = (props) => {
+
+    return (
+        <DefaultLayout>
+
+            <div className="component__empty">
+                <Heading
+                    title="Page Not Found."
+                    subtitle="The page you're looking for doesn't exist or you dont have permission to access it."
+                />
+            </div>
+
+        </DefaultLayout>
+    );
+
+}
+
+export default Suomeksi;
