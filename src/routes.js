@@ -18,13 +18,25 @@ const WebsiteRoutes = {
             },
         },
         {
-            path: 'features',
+            path: 'services',
             indexRoute: {
                 getComponent(location, cb) {
                     DynamicImport(
-                        import(/* webpackChunkName: "features" */'app/content/Features'),
+                        import(/* webpackChunkName: "services" */'app/content/Services'),
                         cb,
-                        'features'
+                        'services'
+                    );
+                }
+            },
+        },
+        {
+            path: 'suomeksi',
+            indexRoute: {
+                getComponent(location, cb) {
+                    DynamicImport(
+                        import(/* webpackChunkName: "suomeksi" */'app/content/Suomeksi'),
+                        cb,
+                        'suomeksi'
                     );
                 }
             },
@@ -53,16 +65,7 @@ const WebsiteRoutes = {
                 }
             },
         },
-        {
-            path: 'suomeksi',
-            getComponent(location, cb) {
-                DynamicImport(
-                    import(/* webpackChunkName: "suomeksi" */'app/content/Suomeksi'),
-                    cb,
-                    'suomeksi'
-                );
-            }
-        },
+
         {
             path: '*',
             getComponent(location, cb) {

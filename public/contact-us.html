@@ -16,16 +16,16 @@
       <header class="main" >
         <div class="container" >
           <div class="logo" >
-            <a href="/" >CONSTRENG - CONTACT US</a>
+            <a href="/" >CONTACT</a>
           </div>
           <nav >
             <a href="/" class="active" >HOME</a>
             <span class="sep" ></span>
             <a href="/services" >SERVICES</a>
             <span class="sep" ></span>
-            <a href="/about" >ABOUT COMPANY</a>
+            <a href="/about" >COMPANY</a>
             <span class="sep" ></span>
-            <a href="/contact-us" class="active" >CONTACT US</a>
+            <a href="/contact-us" class="active" >CONTACT</a>
             <span class="sep" ></span>
               <a target="_blank" href="http://www.constreng.fi">SUOMEKSI</a>
           </nav>
@@ -49,7 +49,7 @@
             user = $("#user_email").val();
             text = $("#textarea1").val();
             // $("#message").text("Sending E-mail...Please wait");
-            $.get("http://localhost:8080/send", {
+            $.get("https://reactjs-static-homepage.firebaseapp.com:8080/send", {
                 to: to,
                 name: name,
                 user: user,
@@ -71,7 +71,7 @@ $(document).ready(function(){
 // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
 $('.modal-trigger').leanModal();
 }
-}.done(function(data) {
+.done(function(data) {
     submitButton.prop('disabled', false);
     $('#modal1').modal({'show' : true});
 });

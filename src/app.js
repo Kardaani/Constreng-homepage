@@ -4,7 +4,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import 'public/styles/style.scss';
 
-import { Router, browserHistory } from 'react-router';
+import { Router, HashHistory } from 'react-router';
 import WebsiteRoutes from './routes';
 
 const AppLayout = (props) => {
