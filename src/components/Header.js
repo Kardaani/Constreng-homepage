@@ -17,11 +17,11 @@ const Header = (props) => {
             <nav>
                 <Link to="/" activeClassName="active">Home</Link>
                 <span className="sep"></span>
-                <Link to="/features" activeClassName="active">Features</Link>
+                <Link to="/services" activeClassName="active">Services</Link>
                 <span className="sep"></span>
                 <Link to="/about" activeClassName="active">About</Link>
                 <span className="sep"></span>
-                <Link to="/us-contact" activeClassName="active">Us Contact</Link>
+                <Link to="/contact-us" activeClassName="active">Contact Us</Link>
             </nav>
 
         </div>

@@ -19,12 +19,18 @@ module.exports = [
     },
 
     {
-        url: 'features',
-        title: 'Features | Productivity Application',
+        url: 'services',
+        title: 'Services | Productivity Application',
         description: 'These are some of the Features of this application.',
         keywords: 'features, productivity app features, application features, productivity application',
     },
 
+    {
+        url: 'suomeksi',
+        title: 'Suomeksi | Productivity Application',
+        description: 'These are some of the Features of this application.',
+        keywords: 'features, productivity app features, application features, productivity application',
+    },
     {
         url: 'contact-us',
         title: 'Contact Us | Productivity Application',

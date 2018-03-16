@@ -107,7 +107,7 @@ const WebpackConfig = {
 			}
 		}),
 
-		process.env.NODE_ENV !== 'production' ? () => {} : new webpack.optimize.UglifyJsPlugin({
+		process.env.NODE_ENV !== 'development' ? () => {} : new webpack.optimize.UglifyJsPlugin({
 			beautify: false,
 			mangle: {
 				screw_ie8: true,
@@ -121,14 +121,14 @@ const WebpackConfig = {
 			comments: false
 		}),
 
-		process.env.NODE_ENV !== 'production' ? () => {} : new ReactStaticPlugin({
+		process.env.NODE_ENV !== 'development' ? () => {} : new ReactStaticPlugin({
 			routes: './src/static/routes.js',
 			template: './src/static/template.js',
 		}),
 
-		process.env.NODE_ENV !== 'production' ? () => {} : new webpack.optimize.AggressiveMergingPlugin(),
+		process.env.NODE_ENV !== 'development' ? () => {} : new webpack.optimize.AggressiveMergingPlugin(),
 
-		process.env.NODE_ENV !== 'production' ? () => {} : new CompressionPlugin({
+		process.env.NODE_ENV !== 'development' ? () => {} : new CompressionPlugin({
 			asset: "[path].gz[query]",
 			algorithm: "gzip",
 			test: /\.(js|html)$/,

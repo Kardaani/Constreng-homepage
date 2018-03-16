@@ -4,11 +4,11 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
 import Home from 'app/content/Home';
-import Features from 'app/content/Services';
+import Services from 'app/content/Services';
 import About from 'app/content/About';
 import ContactUs from 'app/content/ContactUs';
 import PageNotFound from 'app/content/PageNotFound';
-
+import Suomeksi from 'app/content/Suomeksi';
 
 const routes = (
     <Route path='/'>
