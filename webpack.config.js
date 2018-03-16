@@ -38,7 +38,8 @@ const WebpackConfig = {
 		chunkFilename: 'scripts/[name].[chunkhash].chunk.js',
 
 		// path where the generated code chunks will be, in our case its the same dir.
-		publicPath: '/',
+	//	publicPath: '/',
+	publicPath: '/__build__/'
 	},
 
 
