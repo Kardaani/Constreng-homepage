@@ -6,6 +6,7 @@
     "start": "node scripts/server.js",
     "clean": "rimraf public/scripts",
     "watch": "cross-env NODE_ENV=development webpack -w",
+    "dev": "webpack-dev-server --host 0.0.0.0 --port 80",
     "build": "npm run clean && cross-env NODE_ENV=production webpack -p",
     "postinstall": "npm run clean && cross-env NODE_ENV=production webpack -p",
     "deploy": "firebase deploy"
@@ -42,7 +43,9 @@
     "react-static-webpack-plugin": "^2.1.0",
     "rimraf": "^2.6.2",
     "sass-loader": "^6.0.6",
-    "webpack": "^2.4.1"
+    "webpack": "^2.7.0",
+    "webpack-cli": "^1.0.0",
+    "webpack-dev-server": "^1.16.5"
   },
   "dependencies": {
     "1.0.1": "^1.0.0",
@@ -58,6 +61,7 @@
     "nodemailer": "^4.6.0",
     "popper.js": "^1.12.9",
     "react-chunk": "^7.3.0",
+    "webpack-dev-middleware": "^2.0.0",
     "xoauth2": "^1.2.0"
   },
   "contact": {

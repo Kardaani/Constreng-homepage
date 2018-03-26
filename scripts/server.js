@@ -26,8 +26,8 @@ let smtpTrans = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: 'xxxxx@gmail.com',
-        pass: 'yyyyyy'
+        user: 'kari.eronen71@gmail.com',
+        pass: 'PikkuTikka88'
     }
 });
 
@@ -61,6 +61,15 @@ app.get('/send', function (req, res) {
     });
 
 });
+
+//var http = require('http');
+//http.createServer(function (req, res) {
+//  res.writeHead(200, {'Content-Type': 'text/plain'});
+//  res.end('Hello World\n');
+//}).listen(80, "localhost");
+//console.log('Server running at http://localhost:80/');
+
+
 
 app.listen(8080, function (err) {
     if (err) {
